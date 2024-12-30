@@ -17,7 +17,7 @@ const config = {
                 const index = elements[0].index;
                 const label = budgetData.labels[index];
                 alert(`You clicked on ${label}`);
-                // ここで詳細ページに遷移する処理を追加できます
+                window.location.href = `${label.toLowerCase()}.html`;
             }
         }
     }
